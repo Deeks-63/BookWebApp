@@ -1,6 +1,7 @@
 ﻿using  ConceptArchitect.BookManagement;
-
+using ConceptArchitect.BookManagement.Repositories.EFRepository;
 using  BooksWeb02.Extensions;
+using Microsoft.AspNetCore.Builder;
 
 namespace BooksWeb02
 { 
@@ -12,6 +13,8 @@ namespace BooksWeb02
             services.AddControllersWithViews();
 
             //services.AddAdoBMSRepository();
+
+            services.AddSwaggerGen();
 
             services.AddEFBmsRepository();
 
@@ -28,6 +31,14 @@ namespace BooksWeb02
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+
+            }
+
             app.UseStaticFiles();
 
             app.UseRouting();

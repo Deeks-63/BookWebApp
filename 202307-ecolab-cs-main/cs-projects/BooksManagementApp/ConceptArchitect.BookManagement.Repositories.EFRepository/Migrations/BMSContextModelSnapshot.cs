@@ -54,7 +54,7 @@ namespace ConceptArchitect.BookManagement.Repositories.EFRepository.Migrations
 
                     b.Property<string>("AuthorId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CoverPhoto")
                         .IsRequired()
@@ -71,14 +71,15 @@ namespace ConceptArchitect.BookManagement.Repositories.EFRepository.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AuthorId");
-
                     b.ToTable("Books");
                 });
 
             modelBuilder.Entity("ConceptArchitect.BookManagement.User", b =>
                 {
                     b.Property<string>("Email")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("AuthorId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
@@ -95,16 +96,16 @@ namespace ConceptArchitect.BookManagement.Repositories.EFRepository.Migrations
 
                     b.HasKey("Email");
 
+                    b.HasIndex("AuthorId");
+
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ConceptArchitect.BookManagement.Book", b =>
+            modelBuilder.Entity("ConceptArchitect.BookManagement.User", b =>
                 {
                     b.HasOne("ConceptArchitect.BookManagement.Author", null)
                         .WithMany("Books")
-                        .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AuthorId");
                 });
 
             modelBuilder.Entity("ConceptArchitect.BookManagement.Author", b =>
