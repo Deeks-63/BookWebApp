@@ -25,6 +25,8 @@ namespace BooksWeb02
             return services;
         }
 
+
+
         public static IApplicationBuilder ConfigureMiddlewares(this WebApplication app)
         {
             if (!app.Environment.IsDevelopment())
