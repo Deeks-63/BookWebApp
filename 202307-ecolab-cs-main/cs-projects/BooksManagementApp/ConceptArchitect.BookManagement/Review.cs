@@ -9,11 +9,11 @@ namespace ConceptArchitect.BookManagement
 {
     public class Review
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
 
-        public User user { get; set; }
-
-        public User book { get; set; }
+        [ExistingAuthor]
+       public string BookId { get; set; }
+        public string UserEmail { get; set; }
 
         public string Rating { get; set; }
 

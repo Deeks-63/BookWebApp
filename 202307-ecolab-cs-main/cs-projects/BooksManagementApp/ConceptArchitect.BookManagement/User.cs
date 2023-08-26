@@ -11,6 +11,7 @@ namespace ConceptArchitect.BookManagement
 {
     public class User
     {
+       
         [Required]
         [Key]
         [Email]
@@ -22,6 +23,8 @@ namespace ConceptArchitect.BookManagement
         public string Name { get; set; }
         [Column("PhotoUrl")]
         public string? ProfilePhoto { get; set; }
+
+        public List<Favourite> Favourites { get; set; } = new List<Favourite>();
 
     }
 }

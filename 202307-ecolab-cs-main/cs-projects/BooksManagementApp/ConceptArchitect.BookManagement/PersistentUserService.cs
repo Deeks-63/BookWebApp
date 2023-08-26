@@ -29,20 +29,21 @@ namespace ConceptArchitect.BookManagement
             await repository.Delete(email);
         }
 
-        public async Task<List<User>> GetAllBooks()
+        public async Task<List<User>> GetAllUsers()
         {
             return await repository.GetAll();
         }
-
+       
         public async Task<User> GetUserByEmailId(string email)
         {
             return await repository.GetById(email);
         }
 
-        public async Task<List<User>> SearchUsers(string term)
+
+        /*public async Task<List<User>> SearchUsers(string term)
         {
             return await repository.GetAll(U => U.Email.ToLower().Contains(term.ToLower()) || U.Name.ToLower().Contains(term.ToLower()));
-        }
+        }*/
 
         public async Task<User> UpdateUser(User user)
         {

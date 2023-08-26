@@ -1,6 +1,7 @@
 ﻿using  ConceptArchitect.BookManagement;
 
 using  BooksWeb02.Extensions;
+using Microsoft.AspNetCore.Builder;
 
 namespace BooksWeb02
 { 
@@ -12,12 +13,16 @@ namespace BooksWeb02
             services.AddControllersWithViews();
 
             //services.AddAdoBMSRepository();
+            services.AddSwaggerGen();
 
             services.AddEFBmsRepository();
 
             services.AddTransient<IAuthorService, PersistentAuthorService>();
 
             services.AddTransient<IBookService, PersistentBookService>();
+            services.AddTransient<IReviewService, PersistentReviewService>();
+            services.AddTransient<IFavouriteService, PersistentFavouriteService>();
+
 
             return services;
         }
@@ -27,6 +32,12 @@ namespace BooksWeb02
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
+            }
+            if(app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+
             }
             app.UseStaticFiles();
 

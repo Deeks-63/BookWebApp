@@ -44,7 +44,7 @@ namespace ConceptArchitect.BookManagement.Repositories.EFRepository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors");
+                    b.ToTable("Authors", (string)null);
                 });
 
             modelBuilder.Entity("ConceptArchitect.BookManagement.Book", b =>
@@ -73,7 +73,7 @@ namespace ConceptArchitect.BookManagement.Repositories.EFRepository.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("ConceptArchitect.BookManagement.User", b =>
@@ -95,7 +95,7 @@ namespace ConceptArchitect.BookManagement.Repositories.EFRepository.Migrations
 
                     b.HasKey("Email");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("ConceptArchitect.BookManagement.Book", b =>

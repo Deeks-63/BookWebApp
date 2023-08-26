@@ -19,6 +19,8 @@ namespace BooksWeb02.Extensions
             services.AddTransient<IRepository<Author, string>, EFAuthorRepository>();
             services.AddTransient<IRepository<Book, string>, EFBookRepository>();
             services.AddTransient<IRepository<User, string>, EFUserRepository>();
+            services.AddTransient<IRepository<Review, int>, EFReviewRepository>();
+            services.AddTransient<IRepository<Favourite, int>, EFFavouriteRepository>();
             return services;
         }
     }
