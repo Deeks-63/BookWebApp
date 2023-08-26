@@ -15,9 +15,13 @@ namespace BooksWeb02
 
             services.AddEFBmsRepository();
 
+            
+
             services.AddTransient<IAuthorService, PersistentAuthorService>();
 
             services.AddTransient<IBookService, PersistentBookService>();
+            services.AddTransient<IUserService, PersistentUserService>();
+
 
             return services;
         }

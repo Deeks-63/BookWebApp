@@ -1,6 +1,10 @@
 ﻿@model IEnumerable<ConceptArchitect.BookManagement.Book>
 <link rel="stylesheet" href="~/css/allBooks.css" asp-append-version="true" />
 
+@section UserHeaderOptions{
+    @Html.Partial("~/Views/Shared/HeaderOptions.cshtml")
+}
+
 <h2 class="index-book-heading">Books</h2>
 
 <div class="row">

@@ -2,6 +2,10 @@
 @model Author
 <link rel="stylesheet" href="~/css/author_details.css" asp-append-version="true"/>
 
+@section UserHeaderOptions{
+    @Html.Partial("~/Views/Shared/HeaderOptions.cshtml")
+}
+
 <h2 class="author-detail-heading">Author Spotlight</h2>
 <hr />
 

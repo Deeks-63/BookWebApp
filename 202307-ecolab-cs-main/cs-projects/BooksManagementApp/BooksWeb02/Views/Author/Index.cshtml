@@ -1,6 +1,10 @@
 ﻿@model IEnumerable<ConceptArchitect.BookManagement.Author>
 <link rel="stylesheet" href="~/css/allAuthors.css" asp-append-version="true" />
 
+@section UserHeaderOptions{
+    @Html.Partial("~/Views/Shared/HeaderOptions.cshtml")
+}
+
 <h2 class="index-author-heading">Beyond the covers: Faces of Book Authors</h2>
 
 <div class="row">

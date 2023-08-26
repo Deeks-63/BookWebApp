@@ -19,7 +19,7 @@ namespace ConceptArchitect.BookManagement
         [Email]
         public string? Email { get; set; }
 
-        public List<User> Books { get; set; } = new List<User>();
+        public List<Book> Book { get; set; } = new List<Book>();
 
         //public DateTime BirthDate { get; set; }
 

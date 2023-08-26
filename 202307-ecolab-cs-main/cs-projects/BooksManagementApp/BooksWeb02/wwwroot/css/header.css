@@ -49,6 +49,7 @@ a{
 }
 
 footer {
+    position:fixed;
     bottom:0;
     width:100%;
     background-color: #006bd3;
@@ -62,4 +63,12 @@ footer {
     font-size: 20px;
     margin: 0 5px;
     color: white;
+}
+
+.register {
+    margin-left: 5%;
+}
+
+.login {
+    margin-left: 220%;
 }

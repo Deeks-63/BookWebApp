@@ -1,6 +1,10 @@
 ﻿@using ConceptArchitect.BookManagement
 @model Book
 
+@section UserHeaderOptions{
+    @Html.Partial("~/Views/Shared/HeaderOptions.cshtml")
+}
+
 <h2>Add New Book</h2>
 
 <div asp-validation-summary="All" class="text text-danger"></div>

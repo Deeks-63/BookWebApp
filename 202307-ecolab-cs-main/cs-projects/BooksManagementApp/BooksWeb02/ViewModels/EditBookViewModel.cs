@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BooksWeb02.ViewModels
 {
-    public class EditBookViewModel:User
+    public class EditBookViewModel:Book
     {
         public string Id { get; set; }
         public string Title { get; set; }

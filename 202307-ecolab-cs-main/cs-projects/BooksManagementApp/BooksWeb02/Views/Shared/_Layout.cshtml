@@ -64,11 +64,9 @@
             <span class="material-symbols-outlined icon">
                 local_library
             </span>
-            <h1 class="left-heading"><a asp-area="" asp-controller="Home" asp-action="Index">Books Web</a></h1>
-            <h2 class="subheading"><a asp-controller="author" asp-action="index">Authors</a></h2>
-            <h2 class="subheading"><a onclick="showAddAuthor()" asp-controller="author" asp-action="add">Add Author</a></h2>
-            <h2 class="subheading"><a asp-controller="book" asp-action="index">Books</a></h2>
-            <h2 class="subheading"><a onclick="showAddBook()" asp-controller="book" asp-action="add">Add Book</a></h2>
+            <h1 class="left-heading"><a asp-area="" asp-controller="Home" asp-action="Index">BooksWeb</a></h1>
+                @RenderSection("LoginHeaderOptions", false)
+                @RenderSection("UserHeaderOptions", false)
             @*<h2 class="slider-heading"><a href="slider.html">More Details</a></h2>
             <img class="favourite-heading" src="https://www.pngitem.com/pimgs/m/11-115148_star-favorite-rating-bookmark-icon-logo-linkedin-png.png" width="50" height="50" onclick="getPage('favourite.html')"></img>*@
         </div>

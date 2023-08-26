@@ -2,6 +2,10 @@
 @model Book
 <link rel="stylesheet" href="~/css/book_details.css" asp-append-version="true" />
 
+@section UserHeaderOptions{
+    @Html.Partial("~/Views/Shared/HeaderOptions.cshtml")
+}
+
 <h2 class="book-detail-heading">Book</h2>
 <hr />
 
