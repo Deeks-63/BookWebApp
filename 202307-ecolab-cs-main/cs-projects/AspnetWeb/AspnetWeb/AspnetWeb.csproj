@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\404.html" />
+    <None Include="wwwroot\book-list.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ConceptArchitect.BookManagement">
+      <HintPath>..\..\BooksManagementApp\ConceptArchitect.BookManagement\bin\Debug\net6.0\ConceptArchitect.BookManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="ConceptArchitect.Data">
+      <HintPath>..\..\BooksManagementApp\ConceptArchitect.BookManagement\bin\Debug\net6.0\ConceptArchitect.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="middlewares\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App01", "App01\App01.csproj", "{B5184CDA-2C36-4F5E-8A92-62400457E250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App02", "App02\App02.csproj", "{87106A99-C95E-4538-9830-34F97FB95935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptArchitect.Utils", "ConceptArchitect.Utils\ConceptArchitect.Utils.csproj", "{9F408A7A-5FB4-45DB-888F-78879FBAF68A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountTests", "BankAccountTests\BankAccountTests.csproj", "{F96EDAA6-70CD-4A6C-8581-FC6EB781FFB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptArchitect.Finance.V1", "ConceptArchitect.Finance.V1\ConceptArchitect.Finance.V1.csproj", "{5B5760DE-3218-4ED2-AD9C-60987E5359A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountTestsV2", "BankAccountTestsV2\BankAccountTestsV2.csproj", "{A83B5675-1BB3-4437-B455-B4856E725F44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConceptArchitect.Finance.Specs", "ConceptArchitect.Finance.Specs\ConceptArchitect.Finance.Specs.csproj", "{E8279883-9E30-475D-8C14-38D598B43240}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConceptArchitect.Finance.Core", "ConceptArchitect.Finance.Core\ConceptArchitect.Finance.Core.csproj", "{510B6028-B48D-49BF-A7D3-C2F44EC7F310}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingATMApp", "BankingATMApp\BankingATMApp.csproj", "{2AE18B14-E729-4709-AE51-9907C2F291BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptArchitect.Finance.Core.V2", "ConceptArchitect.Banking.V2\ConceptArchitect.Finance.Core.V2.csproj", "{53470A62-5934-44EF-93AA-606B5D614B57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingATMApp02", "BankingATMApp02\BankingATMApp02.csproj", "{58047900-1133-4C44-92CF-CC8AA4F4673E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5184CDA-2C36-4F5E-8A92-62400457E250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5184CDA-2C36-4F5E-8A92-62400457E250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5184CDA-2C36-4F5E-8A92-62400457E250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5184CDA-2C36-4F5E-8A92-62400457E250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87106A99-C95E-4538-9830-34F97FB95935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87106A99-C95E-4538-9830-34F97FB95935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87106A99-C95E-4538-9830-34F97FB95935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87106A99-C95E-4538-9830-34F97FB95935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F408A7A-5FB4-45DB-888F-78879FBAF68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F408A7A-5FB4-45DB-888F-78879FBAF68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F408A7A-5FB4-45DB-888F-78879FBAF68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F408A7A-5FB4-45DB-888F-78879FBAF68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96EDAA6-70CD-4A6C-8581-FC6EB781FFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96EDAA6-70CD-4A6C-8581-FC6EB781FFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96EDAA6-70CD-4A6C-8581-FC6EB781FFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96EDAA6-70CD-4A6C-8581-FC6EB781FFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5760DE-3218-4ED2-AD9C-60987E5359A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5760DE-3218-4ED2-AD9C-60987E5359A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5760DE-3218-4ED2-AD9C-60987E5359A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5760DE-3218-4ED2-AD9C-60987E5359A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83B5675-1BB3-4437-B455-B4856E725F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83B5675-1BB3-4437-B455-B4856E725F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83B5675-1BB3-4437-B455-B4856E725F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83B5675-1BB3-4437-B455-B4856E725F44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8279883-9E30-475D-8C14-38D598B43240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8279883-9E30-475D-8C14-38D598B43240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8279883-9E30-475D-8C14-38D598B43240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8279883-9E30-475D-8C14-38D598B43240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{510B6028-B48D-49BF-A7D3-C2F44EC7F310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{510B6028-B48D-49BF-A7D3-C2F44EC7F310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{510B6028-B48D-49BF-A7D3-C2F44EC7F310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{510B6028-B48D-49BF-A7D3-C2F44EC7F310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE18B14-E729-4709-AE51-9907C2F291BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE18B14-E729-4709-AE51-9907C2F291BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE18B14-E729-4709-AE51-9907C2F291BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE18B14-E729-4709-AE51-9907C2F291BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53470A62-5934-44EF-93AA-606B5D614B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53470A62-5934-44EF-93AA-606B5D614B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53470A62-5934-44EF-93AA-606B5D614B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53470A62-5934-44EF-93AA-606B5D614B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58047900-1133-4C44-92CF-CC8AA4F4673E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58047900-1133-4C44-92CF-CC8AA4F4673E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58047900-1133-4C44-92CF-CC8AA4F4673E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58047900-1133-4C44-92CF-CC8AA4F4673E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A88E8099-2EAF-43B0-ABBE-103191087353}
+	EndGlobalSection
+EndGlobal
