@@ -24,19 +24,19 @@ namespace ConceptArchitect.BookManagement
             return await repository.Add(user);
         }
 
-        public async Task DeleteUser(string email)
+        public async Task DeleteUser(string id)
         {
-            await repository.Delete(email);
+            await repository.Delete(id);
         }
 
-        public async Task<List<User>> GetAllBooks()
+        public async Task<List<User>> GetAllUsers()
         {
             return await repository.GetAll();
         }
 
-        public async Task<User> GetUserByEmailId(string email)
+        public async Task<User> GetUserById(string id)
         {
-            return await repository.GetById(email);
+            return await repository.GetById(id);
         }
 
         public async Task<List<User>> SearchUsers(string term)

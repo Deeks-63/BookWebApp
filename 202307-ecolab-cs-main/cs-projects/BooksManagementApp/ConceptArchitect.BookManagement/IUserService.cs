@@ -8,15 +8,15 @@ namespace ConceptArchitect.BookManagement
 {
     public interface IUserService
     {
-        Task<List<User>> GetAllBooks();
+        Task<List<User>> GetAllUsers();
 
-        Task<User> GetUserByEmailId(string email);
+        Task<User> GetUserById(string id);
 
         Task<User> AddUser(User user);
 
         Task<User> UpdateUser(User user);
 
-        Task DeleteUser(string email);
+        Task DeleteUser(string id);
 
         Task<List<User>> SearchUsers(string term);
     }

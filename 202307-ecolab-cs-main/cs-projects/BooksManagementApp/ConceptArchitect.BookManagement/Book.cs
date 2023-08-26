@@ -14,7 +14,6 @@ namespace ConceptArchitect.BookManagement
         [UniqueBookId]
         public string Id { get; set; }
 
-        [Required]
         public string Title { get; set; }
 
         [WordCount(10)]
@@ -26,6 +25,10 @@ namespace ConceptArchitect.BookManagement
         public string AuthorId { get; set; }
 
         public string CoverPhoto { get; set; }
+
+        public List<Review> Reviews { get; set; } = new List<Review>();
+
+        public List<Favorite> Favorites { get; set; } = new List<Favorite>();
 
         public override string ToString()
         {

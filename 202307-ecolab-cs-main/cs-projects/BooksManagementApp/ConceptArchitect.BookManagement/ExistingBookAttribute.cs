@@ -18,12 +18,12 @@ namespace ConceptArchitect.BookManagement
 
             var bookService = (IBookService)validationContext.GetService(typeof(IBookService));
             if (bookService == null)
-                throw new ArgumentException("Author Service is NOT configured");
+                throw new ArgumentException("Book Service is NOT configured");
 
-            var author = bookService.GetBookById(id).Result;
+            var book = bookService.GetBookById(id).Result;
 
-            if (author == null)
-                return new ValidationResult($"Invalid Author Id :'{id}'");
+            if (book == null)
+                return new ValidationResult($"Invalid Book Id :'{id}'");
             else
                 return ValidationResult.Success;
         }

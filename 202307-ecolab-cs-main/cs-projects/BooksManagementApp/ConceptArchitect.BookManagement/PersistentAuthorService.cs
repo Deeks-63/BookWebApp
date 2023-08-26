@@ -79,6 +79,7 @@ namespace ConceptArchitect.BookManagement
                 old.Biography = newDetails.Biography;
                 old.Photo=newDetails.Photo;
             });
+
         }
     }
 }
