@@ -8,7 +8,7 @@ namespace ConceptArchitect.BookManagement
 {
     public interface IFavoriteService
     {
-        Task<List<Favorite>> GetAllFavorites();
+      /*  Task<List<Favorite>> GetAllFavorites();*/
         Task<Favorite> GetFavoriteById(int id);
         Task<Favorite> AddFavorite(Favorite favorite);
         Task<Favorite> UpdateFavorite(Favorite favorite);

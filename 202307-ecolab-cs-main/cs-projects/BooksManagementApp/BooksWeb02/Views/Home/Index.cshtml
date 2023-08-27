@@ -9,6 +9,11 @@
 
 <link rel="stylesheet" href="~/css/slider.css" asp-append-version="true"/>
 
+@section LoginHeaderOptions{
+    <h2 class="subheading login"><a asp-controller="user" asp-action="login">Login</a></h2>
+    <h2 class="subheading register"><a asp-controller="user" asp-action="register">Register</a></h2>
+
+}
 
 <div class="index-home-container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">

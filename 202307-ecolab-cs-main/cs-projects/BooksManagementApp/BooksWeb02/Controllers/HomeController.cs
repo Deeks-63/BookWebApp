@@ -1,4 +1,5 @@
 ﻿using BooksWeb02.Models;
+using ConceptArchitect.BookManagement;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -13,9 +14,9 @@ namespace BooksWeb02.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(User user)
         {
-            return View();
+            return View(user);
         }
 
         public IActionResult Privacy()

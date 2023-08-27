@@ -14,7 +14,7 @@ namespace BooksWeb02.Controllers
         }
 
 
-        public async Task<ViewResult> Index()
+        public async Task<ViewResult> Index(User user)
         {
             var books = await bookService.GetAllBooks();
             return View(books);
