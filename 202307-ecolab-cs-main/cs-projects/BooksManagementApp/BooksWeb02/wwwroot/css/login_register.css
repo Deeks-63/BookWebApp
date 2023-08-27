@@ -8,7 +8,8 @@ body {
     font-family: sans-serif;
     background-color: #f9f9f9;
     background-image: url("https://assets.brightspot.abebooks.a2z.com/dims4/default/524278d/2147483647/strip/false/crop/800x450+0+75/resize/1200x675!/quality/90/?url=http%3A%2F%2Fabebooks-brightspot.s3.amazonaws.com%2F26%2F2e%2F1bbe418e42cca71a1bffff370175%2Fpromo-value-of-oldbooks.jpg");
-    background-size: cover;
+    background-size: 100%;
+    background-repeat:no-repeat;
 }
 
 .container {
@@ -67,11 +68,10 @@ p {
     margin-left: 10px;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+.anchor {
+    color: #006bd3 !important;
 }
 
-a:hover {
-    text-decoration: underline;
+.anchor:hover{
+    text-decoration: underline !important;
 }

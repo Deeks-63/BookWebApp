@@ -12,6 +12,12 @@ namespace BooksWeb02.Controllers
             this.userService = userService;
         }
 
+        public ActionResult Index(User user)
+        {
+            ViewBag.User = user;
+            return View();
+        }
+
         [HttpGet]
         public ViewResult Register()
         {
@@ -25,7 +31,7 @@ namespace BooksWeb02.Controllers
             {
                 await userService.AddUser(user);
                 
-                return RedirectToAction("Index", "Author", user);
+                return RedirectToAction("Index", user);
             }
             else
             {
@@ -46,11 +52,10 @@ namespace BooksWeb02.Controllers
         {
             if (ModelState.IsValid)
             {
-                User new_user = await userService.GetUserByEmailId(user.Email);
-                User _user = new_user;
+                var new_user = await userService.GetUserByEmailId(user.Email);
                 if(user.Password == new_user.Password)
                 {
-                    return RedirectToAction("Index", "Author", new_user);
+                    return RedirectToAction("Index", new_user);
                 }
                 else
                 {
@@ -62,6 +67,11 @@ namespace BooksWeb02.Controllers
                 return View(user);
             }
             
+        }
+
+        public async Task<ActionResult> Logout()
+        {
+            return RedirectToAction("Index", "Home");
         }
 
     }

@@ -21,6 +21,7 @@ namespace BooksWeb02
 
             services.AddTransient<IBookService, PersistentBookService>();
             services.AddTransient<IUserService, PersistentUserService>();
+            services.AddTransient<IReviewService, PersistentReviewService>();
 
 
             return services;

@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="~/css/allBooks.css" asp-append-version="true" />
 
 @section UserHeaderOptions{
-    @Html.Partial("~/Views/Shared/HeaderOptions.cshtml")
+    @Html.Partial("~/Views/User/HeaderOptions.cshtml")
 }
 
 <h2 class="index-book-heading">Books</h2>
@@ -12,9 +12,9 @@
     @foreach (var book in Model)
     {
         <div class='col  col-md-3 '>
-            <div class="card h-100 index-book-card">
+            <div class="card  index-book-card">
                 <a asp-action="details" asp-route-id="@book.Id" class="index-books">
-                    <img class="card-img-top" src="@book.CoverPhoto" alt="Image of an Book">
+                    <img class="card-img-top" src="@book.CoverPhoto" alt="Image of an Book" height="300px" >
                     <div class="card-body">
                         <h6 class="card-title index-book-title">@book.Title</h6>
                     </div>

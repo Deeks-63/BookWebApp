@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="~/css/book_details.css" asp-append-version="true" />
 
 @section UserHeaderOptions{
-    @Html.Partial("~/Views/Shared/HeaderOptions.cshtml")
+    @Html.Partial("~/Views/User/HeaderOptions.cshtml")
 }
 
 <h2 class="book-detail-heading">Book</h2>
@@ -30,6 +30,9 @@
         <p class="card-text">@Model.Description</p>
         <a asp-action="edit" asp-route-id="@Model.Id" class="btn btn-outline-success">Edit</a>
         <a asp-action="Delete" asp-route-id="@Model.Id" class=" btn btn-outline-danger">Delete</a>
+@*         <a asp-action="Review" asp-route-id="@Model.Id" class="btn btn-outline-success">Reviews</a>
+ *@        <a asp-controller = "Review" asp-action="AddReview" asp-route-id="@Model.Id" class="btn btn-outline-success">Add Review</a>
+
     </div>
 </div>
 

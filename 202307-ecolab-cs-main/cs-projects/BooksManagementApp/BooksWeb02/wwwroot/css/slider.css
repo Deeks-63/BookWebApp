@@ -53,3 +53,21 @@
     font-size: 7rem;
     padding-left: 20px;
 }
+
+.header {
+    overflow: auto; /* Clear floats */
+}
+
+.header img {
+    float: right;
+    margin-left: 20px;
+    margin-top: 10px;
+    max-width: 50%; /* Adjust this value as needed */
+    height: auto;
+    border-radius: 50px;
+}
+
+.explore:hover{
+    color:whitesmoke;
+    font-size:42px;
+}

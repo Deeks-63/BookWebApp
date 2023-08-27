@@ -4,7 +4,11 @@
 <link rel="stylesheet" href="~/css/login_register.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/header.css" asp-append-version="true" />
 
+@section LoginHeaderOptions{
+    <h1 class="left-heading"><a asp-area="" asp-controller="Home" asp-action="Index">BooksWeb</a></h1>
 
+
+}
 <div class="container">
 
     <h2>LOGIN</h2>
@@ -17,5 +21,5 @@
         <!-- <input type="submit" value="Login"> -->
         <input type="submit" value="LOGIN" class='btn btn-primary form-control' />
     </form>
-    <p> Don't have an account? <a asp-controller="user" asp-action="register"> Sign Up Here</a></p>
+    <p> Don't have an account? <a asp-controller="user" asp-action="register" class="anchor"> Sign Up Here</a></p>
 </div>
