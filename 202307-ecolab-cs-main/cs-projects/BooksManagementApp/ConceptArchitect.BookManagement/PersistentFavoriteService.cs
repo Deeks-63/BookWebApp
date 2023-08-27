@@ -57,8 +57,7 @@ namespace ConceptArchitect.BookManagement
 
         public async Task<List<Favorite>> GetFavoriteByUserId(string userId)
         {
-            userId.ToLower();
-            return await repository.GetAll(r => r.UserEmail.ToLower().Contains(userId));
+            return await repository.GetAll(r => r.UserEmail == userId);
         }
 
         public async Task<List<Favorite>> SearchFavorites(string term)
